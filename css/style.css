@@ -126,6 +126,14 @@ header {
 /*--------------------- Banner -------------------------*/
 .banner {
   background-color: var(--title-color);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   margin: 0 auto;
   padding-top: 188px;
   padding-bottom: 188px;
@@ -175,6 +183,17 @@ header {
 .four-section {
   padding-top: 120px;
 }
+.four-section-icon {
+  background-color: #f4f4fd;
+  display: flex;
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  margin: 0 auto 8px;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 100px;
+}
 .four-section-list {
   display: flex;
   gap: 24px;
@@ -184,7 +203,7 @@ header {
 }
 .four-section-item {
   list-style-type: none;
-  display: flex;
+  display: block;
   margin: 0 auto;
 }
 .four-section-title {
@@ -287,6 +306,35 @@ header {
 }
 .team-content {
   padding: 32px 16px;
+}
+.team-social-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  padding-left: 0;
+  margin-top: 8px;
+}
+.team-social-item {
+  list-style-type: none;
+  width: 40px;
+  height: 40px;
+}
+.team-social-item :hover,
+.team-social-item :focus {
+  background-color: var(--hover-color);
+}
+.team-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
+.team-social-icon {
+  fill: #f4f4fd;
 }
 
 /*---------------------------- Footer ----------------------------*/
